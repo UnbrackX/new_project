@@ -162,15 +162,8 @@
 
         <div class="main-card-container">
           <div class="main-card">
-            <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
-              alt="Office"
-            />
+            <img id="mainImg" src="./assets/img/body/card1.svg" alt="Office" />
             <div class="overlay">
-              <h1>
-                We do business <br />
-                beyond boundaries
-              </h1>
               <div class="play-button">
                 <i class="fas fa-play"></i>
               </div>
@@ -179,14 +172,49 @@
 
           <div class="side-card">
             <img
+              id="sideImg"
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500"
               alt="Stats"
             />
-            <div class="next-btn">→</div>
-            `
+            <div class="next-btn" id="nextBtn">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+      const images = [
+        "./assets/img/body/card1.svg",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+      ];
+
+      let index = 0;
+
+      const mainImg = document.getElementById("mainImg");
+      const sideImg = document.getElementById("sideImg");
+      const nextBtn = document.getElementById("nextBtn");
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % images.length;
+
+        mainImg.src = images[index];
+        sideImg.src = images[(index + 1) % images.length];
+      });
+      nextBtn.addEventListener("click", () => {
+        mainImg.style.opacity = 0;
+        sideImg.style.opacity = 0;
+
+        setTimeout(() => {
+          index = (index + 1) % images.length;
+
+          mainImg.src = images[index];
+          sideImg.src = images[(index + 1) % images.length];
+
+          mainImg.style.opacity = 1;
+          sideImg.style.opacity = 1;
+        }, 300);
+      });
+    </script>
   </body>
 </html>
