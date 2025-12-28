@@ -18,45 +18,7 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <div class="logo-section">
-          <a href="/" class="logo">
-            <img
-              src="./assets/img/all__logo/logo.svg"
-              alt="Logo 1"
-              class="logo-img-main"
-            />
-          </a>
-          <div class="divider"></div>
-          <div class="partner-logo">
-            <img
-              src="./assets/img/all__logo/logo_2.svg"
-              alt="Logo 2"
-              class="logo-img-sub"
-            />
-          </div>
-        </div>
-
-        <ul class="nav__links">
-          <li><a href="#">Asosiy</a></li>
-          <li><a href="#">Biz haqimizda</a></li>
-          <li><a href="#">Xalqaro</a></li>
-          <li><a href="#">Xizmatlar</a></li>
-          <li><a href="#">Mijozlar</a></li>
-          <li><a href="#">Yangiliklar</a></li>
-          <li><a href="#">Resurslar</a></li>
-          <li><a href="#">Bog'lanish</a></li>
-          <li class="lang-selector">
-            <i class="fa-solid fa-language"></i> Ўзб
-          </li>
-        </ul>
-
-        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-      </nav>
-      <div class="line"></div>
-    </header>
-
+    <div id="header"></div>
     <main>
       <div class="container">
         <div class="hero">
@@ -318,70 +280,7 @@
         </div>
       </div>
     </section>
-
-    <section class="consultation">
-      <div class="container consultation__wrapper">
-        <div class="consultation__text">
-          <h2>
-            Аудит ва молиявий масалалар <br />
-            бўйича дастлабки бепул <br />
-            консультацияни олинг!
-          </h2>
-        </div>
-
-        <form class="consultation__form">
-          <input type="text" placeholder="Имя" />
-          <input type="tel" placeholder="Телефон" />
-
-          <div class="form__bottom">
-            <label>
-              Мен маълумотлардан фойдаланиш шартларини қабул қиламан
-            </label>
-            <button type="submit">Жўнатиш</button>
-          </div>
-        </form>
-      </div>
-
-      <footer class="footer">
-        <div class="container footer__wrapper">
-          <div class="footer__col">
-            <img src="assets/img/all__logo/Frame 1.svg" alt="Logo" />
-          </div>
-
-          <div class="footer__col">
-            <h4>Компания</h4>
-            <ul>
-              <li>Биз ҳақимизда</li>
-              <li>Хизматлар</li>
-              <li>Мижозлар</li>
-              <li>Янгиликлар</li>
-            </ul>
-          </div>
-
-          <div class="footer__col">
-            <h4>Хавфсизлик</h4>
-            <ul>
-              <li>FAQ</li>
-              <li>Махфийлик сиёсати</li>
-              <li>Ҳуқуқий маълумотлар</li>
-            </ul>
-          </div>
-
-          <div class="footer__col">
-            <h4>Контактлар</h4>
-            <p>Тошкент, Боғишамол 1-9F</p>
-            <p>+998 90 123 45 67</p>
-            <p>info@nazorataudit.uz</p>
-          </div>
-          <div class="socials">
-            <span>f</span>
-            <span>t</span>
-            <span>i</span>
-          </div>
-        </div>
-      </footer>
-    </section>
-    
+    <div id="footer"></div>
   </body>
   <script>
     const images = [
@@ -438,12 +337,6 @@
       }, 300);
     });
   </script>
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav__links");
-
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("mobile-active");
-    });
-  </script>
+ 
+  <script src="assets/js/main.js"></script>
 </html>

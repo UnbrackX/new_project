@@ -1,0 +1,117 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .about__hero {
+     margin-top: 136px;
+     display: flex;
+     align-items: center;
+     gap: 32px;
+ }
+
+ .title-section h1 {
+     color: rgba(33, 33, 33, 1);
+     font-family: Geist;
+     font-style: Medium;
+     font-size: 48px;
+     font-weight: 500;
+     line-height: 58px;
+     letter-spacing: 0%;
+     text-align: left;
+     width: 488px;
+     height: 124px;
+ }
+
+ .description-section p {
+     color: rgba(74, 74, 74, 1);
+     font-family: Geist;
+     font-style: Regular;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
+     letter-spacing: 0%;
+     text-align: left;
+     width: 692px;
+     height: 60px;
+ }
+
+ .content {
+     margin-top: 135px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 60px;
+     align-items: start;
+     margin-bottom: 80px;
+ }
+
+ .year-section {
+     padding-top: 20px;
+ }
+
+ .year-label {
+     color: rgba(96, 96, 96, 1);
+     font-family: Geist;
+     font-style: Regular;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 22px;
+     letter-spacing: 0%;
+     text-align: left;
+ }
+
+ .year {
+     color: rgba(33, 33, 33, 1);
+     font-family: Geist;
+     font-style: Medium;
+     font-size: 32px;
+     font-weight: 500;
+     line-height: 38px;
+     letter-spacing: 0%;
+     text-align: left;
+     margin-top: 8px;
+ }
+
+ .year-description {
+     color: rgba(96, 96, 96, 1);
+     font-family: Geist;
+     font-style: Regular;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 22px;
+     letter-spacing: 0%;
+     text-align: left;
+     margin-top: 8px;
+ }
+
+
+
+ @media (max-width: 968px) {
+     .container {
+         padding: 40px 30px;
+     }
+
+     .header,
+     .content {
+         grid-template-columns: 1fr;
+         gap: 40px;
+     }
+
+     .title-section h1 {
+         font-size: 36px;
+     }
+
+
+ }
+
+ @media (max-width: 640px) {
+     .container {
+         padding: 30px 20px;
+     }
+
+     .title-section h1 {
+         font-size: 28px;
+     }
+
+ }
