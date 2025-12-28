@@ -9,6 +9,7 @@
   </head>
   <body>
     <div id="header"></div>
+
     <div class="container">
       <div class="about__hero">
         <div class="title-section">
@@ -35,10 +36,47 @@
             хизматларини таqdим этамиз.
           </div>
         </div>
+        <div class="about__image">
+          <img
+            src="assets/img/about/about__hero1.svg"
+            alt=""
+            class="img-back"
+          />
+          <img
+            src="assets/img/about/about_hero2.svg"
+            alt=""
+            class="img-front"
+          />
+        </div>
       </div>
     </div>
+
+    <div class="year__line">
+      <button class="years active">1998</button>
+      <button class="years">2000</button>
+      <button class="years">2002</button>
+      <button class="years">2004</button>
+      <button class="years">2006</button>
+      <button class="years">2008</button>
+      <button class="years">2010</button>
+      <button class="years">2012</button>
+      <button class="years">2014</button>
+      <button class="years">2016</button>
+      <button class="years">2018</button>
+      <button class="years">2020</button>
+    </div>
+
     <div id="footer"></div>
   </body>
+  <script>
+    const years = document.querySelectorAll(".years");
 
+    years.forEach((year) => {
+      year.addEventListener("click", () => {
+        years.forEach((y) => y.classList.remove("active"));
+        year.classList.add("active");
+      });
+    });
+  </script>
   <script src="assets/js/main.js"></script>
 </html>

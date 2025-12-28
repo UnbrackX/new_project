@@ -41,9 +41,38 @@
      margin-top: 135px;
      display: grid;
      grid-template-columns: 1fr 1fr;
-     gap: 60px;
-     align-items: start;
+     gap: 5px;
      margin-bottom: 80px;
+ }
+
+ .about__image {
+     position: relative;
+     width: 500px;
+     height: 350px;
+ }
+
+ .about__image img {
+     position: absolute;
+     object-fit: cover;
+     width: 387px;
+     height: 258px;
+ }
+
+ .img-back {
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1;
+     border-radius: 8px;
+     filter: grayscale(100);
+ }
+
+ .img-front {
+     bottom: 60px;
+     right: -90px;
+     width: 60%;
+     z-index: 2;
+     border-radius: 8 px;
  }
 
  .year-section {
@@ -85,8 +114,6 @@
      margin-top: 8px;
  }
 
-
-
  @media (max-width: 968px) {
      .container {
          padding: 40px 30px;
@@ -114,4 +141,45 @@
          font-size: 28px;
      }
 
+ }
+
+ .year__line {
+     display: flex;
+     margin-bottom: 100px;
+     width: 1200px;
+     margin: 0 auto;
+ }
+
+ .years {
+     margin-top: -60px;
+     position: relative;
+     background: none;
+     border: none;
+     font-size: 16px;
+     color: #9e9e9e;
+     cursor: pointer;
+     padding-bottom: 12px;
+     min-width: 190px;
+     margin-right: 50px;
+     margin-bottom: 50px;
+ }
+
+ .years::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 3px;
+     background: #e0e0e0;
+     border-radius: 2px;
+ }
+
+ .years.active {
+     color: #1a4cff;
+     font-weight: 500;
+ }
+
+ .years.active::after {
+     background: #1a4cff;
  }
